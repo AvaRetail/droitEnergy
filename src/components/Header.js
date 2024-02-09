@@ -23,7 +23,7 @@ function Header() {
       <div className="header-container" >
       {/* <img alt="background" src={background} className='background-img' /> */}
       <video autoPlay loop muted className='background-video'  data-aos="fade-up" data-aos-duration="4500">
-        <source src={background} type="video/mp4" />
+        <source src={background1} type="video/mp4" />
         Your browser does not support the video tag.
       </video>
       {/* <div className="background-img"></div> */}
