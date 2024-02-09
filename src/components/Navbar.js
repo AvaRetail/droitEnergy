@@ -10,6 +10,7 @@ import logo3 from '../img/logo3.png';
 import logo4 from '../img/logo4.png';
 import logo6 from '../img/logo6.png';
 import logo8 from '../img/logo8.png';
+import logofinal from '../img/logofinal.png';
 // import './Navbar.css';
 function Navbar() {
 
@@ -56,7 +57,7 @@ function Navbar() {
               to="headerbg"
               style={{ cursor: "pointer" }}
             > */}
-              <img alt="logo" src={logo8} className="droitlogo"/>
+              <img alt="logofinal" src={logofinal} className="droitlogo"/>
             {/* </Link> */}
           </h1>
           <ul className="bar">
