@@ -1,0 +1,201 @@
+.container {
+    width: auto;
+    max-width: 1300px;
+    padding-right: var(--bs-gutter-x,.75rem);
+    padding-left: var(--bs-gutter-x,.75rem);
+    margin-right: auto;
+    margin-left: auto;
+  }
+  .contact .row {
+    width: 100%;
+  }
+  .row {
+    display: flex;
+    z-index: 1;
+  }
+  .img-fluid {
+    max-width: 60%;
+    width: 50%;
+  }
+  .text-center {
+    text-align: center;
+  }
+  .bgred {
+    background-color: red;
+  }
+  .btn {
+    outline: none;
+    border: none;
+    font-size: 20px;
+    border-radius: 10px;
+    text-decoration: none;
+    color:white;
+    font-weight: 500;
+    z-index: 1;
+    background-color: #7E9A6E !important;
+    padding:  15px 30px;
+    margin: 0 0.5rem;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+    
+  }
+  
+  .col-md-12 {
+    width: 100%;
+  }
+  .col-md-6 {
+    width: 49.9%;
+  }
+  .col-md-3 {
+    margin: 0 1rem!important;
+    width:100%;
+  }
+  
+  .col-md-4 {
+    width:33.3%;
+  }
+  .col-md-4:first-child {
+    margin-right: 1rem;
+  
+  }
+  .col-md-4:last-child {
+    margin-left: 1rem;
+  
+  }
+  
+  .x {
+    margin: 0rem 1rem!important;
+    width:33.3%;
+  }
+/* -------------------------------------------------Header------------------------------------------ */
+/* Header */
+.header-container {
+    position: relative !important;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    background-position: center;
+    /* display: flex;
+    align-items: center;
+    justify-content: center; */
+  }
+  .header-container::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6) !important; 
+    z-index: 0;
+  }
+  .background-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /* object-fit: cover; */
+    z-index: -1;
+    /* background-image: url('./img/background.png'); */
+    background-size: cover;
+    /* clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%); */
+  }
+  .background-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  
+  
+  .text-container {
+    position: absolute;
+    z-index: 1;
+    bottom: 5%; /* Adjust this value to move the text up or down */
+    left: 5%; /* Adjust this value to move the text left or right */
+    color: #fff;
+    text-align: left; /* Align text to the left */
+    padding: 1px; /* Add padding to the text container */
+  }
+  .text-container h1 {
+    /* background: rgba(0, 0, 0, 0.7); */
+     /* Adjust the color and opacity of the background */
+    display: inline; /* Ensures background doesn't stretch beyond text */
+    /* padding: 10px 20px; */
+     /* Adjust padding as needed */
+    border-radius: 10px;
+    color:white !important;
+    font-size: 4rem;
+    opacity: 1 !important;
+  }
+  .text-container .main-home-text {
+    color: #e17126 !important;
+  }
+  
+  .text-container p{
+    font-size: 1.25rem;
+    margin-left: 1px;
+    color: white;
+  }
+  .text-container .readmore{
+    background-color: #7E9A6E !important;
+    border: 2px solid black;
+    border-radius: 40px;
+    color: #000000;
+  }
+  
+  .hero-info {
+    position: relative;
+    z-index: 1; /* Ensure the content is above the background image */
+    color: #fff; /* Add text color for better visibility */
+  }
+  video {
+    top: 0;
+    object-fit: cover;
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    z-index: -1;
+  }
+  .video-hero {
+    height: 100%;
+    width: 100%;
+    min-height: 500px;
+    object-fit: cover;
+  }
+  img{
+    width: 100%;
+    /* max-width: max-content; */
+  }
+  .headerbg {
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    z-index: 0;
+    top: 0;
+    background-color: black;
+    opacity: 0.7;
+  
+  }
+  header {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.2);
+  }
+  header h1 {
+    z-index: 1;
+    color: black;
+    font-size: 64px;
+  }
+  .opened {
+    transform: translateX(0%)!important;
+  }
+  

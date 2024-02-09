@@ -1,0 +1,96 @@
+.card-title {
+    color: #f2ab39 !important;
+    font-size: 24px;
+  }
+  .p-3 {
+    padding: 0.2rem 1rem;
+  }
+  .card-text {
+    padding: 0rem 0rem 1rem 0rem;
+    font-weight: 500;
+    font-size: 18px;
+  
+  }
+  
+  .card {
+    cursor: pointer;
+    border-radius: 10px;
+    width: 100%;
+    transition: all 0.2s;
+    background-color: white;
+    box-shadow: 5px 5px 5px 5px #e5e5e5;
+  }
+  .card:hover {
+    transform:scale(1.03);
+  }
+  
+  .services .col-md-4 {
+    margin: 1rem 1rem 1rem 1rem;
+  
+  
+  }
+  ul li a {
+    cursor: pointer;
+  }
+  .about {
+    margin-bottom: 15rem;
+  }
+  .card-cover {
+    padding: 2rem 0rem;
+    border-radius: 15px;
+    height: auto;
+    width: 100%;
+  }
+  .s {
+    width: 100%;
+    margin: 0 1rem!important;
+  }
+  
+  .contact-input {
+    color:white;
+    border-radius: 5px;
+    padding: 15px 0px 10px 5px;
+    font-size: 20px;
+    width: 100%;
+    outline: 0;
+    border: 0;
+    background-color: rgba(0, 0, 0, 0.76);
+  }
+  .form-btn {
+    border: 0;
+    outline: 0;
+    cursor: pointer;
+    font-size: 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    color: white;
+    width: 100%;
+    font-weight: 500;
+    z-index: 1;
+    background-color: #f2ab39 !important;
+    padding: 10px 50px;
+  
+    transition: background-color 0.2s;
+  }
+  .readmore{
+   background-color: #7E9A6E !important;
+    border: 2px solid black;
+    border-radius: 40px;
+  }
+  .contact-textarea {
+    color:white;
+    border-radius: 5px;
+    padding: 15px 0px 10px 5px;
+    font-size: 20px;
+    width: 100%!important;
+    min-width: 100%!important;
+    max-width: 100%!important;
+    height: 300px;
+    min-height: 300px;
+    max-height: 600px;
+    outline: 0;
+    border: 0;
+    background-color: rgba(0, 0, 0, 0.76);
+  
+  }
+  
