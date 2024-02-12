@@ -10,7 +10,8 @@ import logo3 from '../img/logo3.png';
 import logo4 from '../img/logo4.png';
 import logo6 from '../img/logo6.png';
 import logo8 from '../img/logo8.png';
-import logofinal from '../img/logofinal.png';
+import logofinal1 from '../img/logofinal.png';
+import logofinal from '../img/logo-black.png';
 // import './Navbar.css';
 function Navbar() {
 

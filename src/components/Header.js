@@ -29,7 +29,7 @@ function Header() {
       {/* <div className="background-img"></div> */}
       <div className="text-container"   data-aos="fade-right" data-aos-duration="4500">
         <h1>
-        <span className="main-home-text">Powering Progress ,</span>
+        <span className="main-home-text">Powering Progress </span>
         <br /><strong className="main-home-text">Preserving the Planet</strong></h1>
         <p className="pt-20">Our mission is to utilize advancements in geoscience<br /> to expedite the shift towards clean energy by delivering affordable
         <br /> and dependable geothermal power solution </p>

@@ -2,7 +2,7 @@ body {
   overflow: auto;
   margin: 0;
   padding: 0;
-  font-family: 'inter', sans-serif;
+  font-family: 'montserrat', sans-serif;
     
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -49,6 +49,7 @@ code {
   max-width: 60%;
   width: 50%;
 }
+
 .text-center {
   text-align: center;
 }
@@ -147,7 +148,7 @@ code {
 }
 
 .droitlogo {
-  width: 100px; /* Adjust width as needed */
+  width: 150px; /* Adjust width as needed */
   height: auto; /* Maintain aspect ratio */
   margin-top: 10px;
 }
@@ -167,16 +168,13 @@ code {
 }
 .navbar ul li a {
   transition: all 0.2s;
-  font-size: 24px;
+  font-size: 1.25rem;
   cursor: pointer;
-
   text-decoration: none;
   /* color: rgb(243, 243, 243); */
   /* color: #01bf71 !important; */
   color: #1a6a05  !important;
-  font-weight: 700;
-
-
+  font-weight: 500;
 }
 .bar ul {
   list-style: none;
@@ -243,7 +241,7 @@ code {
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(35, 62, 28, 0.2) !important; 
+  background: rgba(35, 62, 28, 0.25) !important; 
   z-index: 0;
 }
 .background-img {
@@ -296,7 +294,7 @@ code {
 }
 
 .text-container p{
-  font-size: 1.25rem;
+  font-size: 1.5rem;
   margin-left: 1px;
   color: white;
 }
@@ -363,21 +361,23 @@ header h1 {
   color: #1a6a05  !important;
 }
 .about .img-fluid{
-  width: 100% !important;
+  width: 80% !important;
   height: auto;
-  max-width: max-content;
+  max-width: max-content !important;
 }
 .about-container {
   display: flex;
   align-items: center;
   color: #f3f5ef ;
+  padding-bottom: 3rem;
 }
 .about-h1{
   color: #1a6a05  !important;
-  font-size: 52px;
-  margin-left: 10.5%;
+  font-size: 4rem;
+  /* margin-left: 10.5%; */
   position: relative;
   display: inline-block;
+  line-height: 0rem !important;
 }
 .solid-line {
   
@@ -385,9 +385,9 @@ header h1 {
   border: none;
   border-top: 1px solid #1a6a05 ; /* Adjust the color and thickness of the line as needed */
 }
-.about-span{
+.about-h2{
   color: #7e9a6e;
-  font-size: 42px;
+  font-size: 2.5rem;
   font-family: 'montserrat',sans-serif;
   font-weight: bold;
 }
@@ -396,8 +396,8 @@ header h1 {
   font-size: 32px !important;
 }
 .main-p {
-  font-size: 24px;
-  font-weight: 500;
+  font-size: 1.5rem;
+  font-weight: 400;
 }
 .about .clear {
 	
@@ -413,6 +413,19 @@ main {
   padding: 1rem 0;
   background-color: #f3f5ef;
   width: 100%;
+}
+/* about */
+/* -------------------------------------------about-------------------------------------------------- */
+.icon-img{
+  width: 80% !important;
+}
+.col-md-4:first-child {
+  margin-right: 0rem  !important;
+}
+.about {
+  .col-md-4 {
+  width: 20%;
+}
 }
 /* -------------------------------------------------footer------------------------------------------ */
 /* footer */
@@ -506,8 +519,8 @@ footer ul li a {
 /* -------------------------------------------------Services------------------------------------------ */
 /* Services */
 .card-title {
-  color: #f2ab39 !important;
-  font-size: 24px;
+  /* color: #1a6a05 !important; */
+  font-size: 1.5rem;
 }
 .p-3 {
   padding: 0.2rem 1rem;
@@ -526,6 +539,18 @@ footer ul li a {
   transition: all 0.2s;
   background-color: white;
   box-shadow: 5px 5px 5px 5px #e5e5e5;
+  display: flex;
+  flex-direction: column;
+  height: 100%; /* Ensure the card takes up the full height of its container */
+}
+
+.card-content {
+  flex-grow: 1; /* Allow the content to take up the available space */
+  display: flex;
+  flex-direction: column;
+}
+.card-content img {
+  margin-bottom: 10px; /* Add some space below the image */
 }
 .card:hover {
   transform:scale(1.03);
@@ -540,10 +565,12 @@ ul li a {
   cursor: pointer;
 }
 .about {
-  margin-bottom: 15rem;
+  margin-bottom: 4rem;
+  /* margin-left: 17rem;
+  padding-right: 10.5rem; */
 }
 .card-cover {
-  padding: 2rem 0rem;
+  /* padding: 2rem 0rem; */
   border-radius: 15px;
   height: auto;
   width: 100%;
@@ -600,6 +627,103 @@ ul li a {
   /* background-color: white; */
 
 }
+/* adoptable */
+
+.ad-container {
+  position: relative;
+}
+.ad-image-container {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  height: auto;
+  max-height: 500px; /* Adjust the height as needed */
+}
+
+.ad-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(35, 62, 28, 0.3) !important; 
+  /* border-radius: 15px; */
+}
+
+.ad-main-p{
+  font-size: 2rem;
+  color: #7E9A6E;
+  text-align: justify;
+}
+
+/* .max-width-half-height {
+  width: 1275px;
+  height: 395px;
+  object-fit: cover;
+  border-radius: 15px;
+} */
+.ad-position-relative {
+  position: relative;
+}
+
+.ad-overlay-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  /* background-color: rgba(255, 255, 255, 0.7);  */
+  color: white;
+  font-size: 2.5rem;
+  font-weight: bold;
+  padding: 10px;
+  border-radius: 5px;
+  z-index: 1; /* Ensure it's above the image */
+}
+
+.ad-text-container {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 50%; /* Initial width of the text container */
+  height: 100%;
+  background: rgba(35, 62, 28, 0.2) !important; 
+  transition: opacity 0.5s ease; /* Transition the opacity change */
+  opacity: 0; /* Initially hide the text container */
+  overflow: auto; /* Enable scrolling if needed */
+  margin-left: 10px; /* Add space between the two sections */
+  
+}
+.ad-text-container p{
+  /* color: #1a6a05; */
+  font-size: 1.25rem;
+  font-family: 'montserrat',sans-serif;
+  margin-top: 20%;
+  margin-left: 2%;
+}
+.ad-text-container .centered {
+  
+  padding-left:-20%; /* Add margin from the left side */
+}
+.ad-position-relative {
+  transition: width 0.5s ease; /* Transition the width change */
+}
+
+.ad-container:hover .ad-position-relative {
+  width: 50%; /* Shrink the image container width on hover */
+}
+
+.ad-container:hover .ad-text-container {
+  opacity: 1; /* Show the text container on hover */
+}
+.max-width-half-height {
+  width: 100%;
+  height: 50%;
+  object-fit: cover; /* Maintain aspect ratio */
+  max-width: max-content;
+}
+/* adoptable */
+
+
 
 @media (max-width: 1300px) {
   .container {
@@ -609,7 +733,9 @@ ul li a {
 
 @media (max-width: 992px) {
 
- 
+ .icon-img{
+  width: 30%;
+ }
 .navbar ul li {
   margin: 0 1rem;
   
@@ -684,7 +810,9 @@ ul li a {
     height: 40px;
     line-height: 2;
   }
- 
+  .icon-img{
+    width: 30%;
+   }
   .text-container {
     bottom: 5%; /* Adjust bottom spacing for smaller screens */
     left: 2%; /* Adjust left spacing for smaller screens */
@@ -695,9 +823,6 @@ ul li a {
     font-size: 2.5rem; /* Adjust the font size for smaller screens */
   }
 
-  .text-container p {
-    font-size: 1.2rem; /* Adjust the font size for smaller screens */
-  } 
   header h1 {
     text-align: center;
     font-size: 44px!important;
@@ -759,7 +884,7 @@ ul li a {
   
   }
   .about-h1{
-    font-size: 45px;
+    font-size: 2.8rem;
   }
   .about-span{
     font-size: 32px;
@@ -871,7 +996,11 @@ ul li a {
 
 .mb-2 {
   margin-bottom: 2rem!important;
+  padding-right: 2rem;
 }
 .mb-1 {
   margin-bottom: 1rem!important;
+}
+.leftPadding{
+  padding-left: 1rem;
 }
